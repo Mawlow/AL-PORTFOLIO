@@ -15,44 +15,56 @@
 <body>
   <!-- ========== NAVBAR ========== -->
   <header class="navbar" id="navbar" role="banner">
-    <div class="navbar__container">
-      <a href="#home" class="navbar__logo" aria-label="Anthony Leuterio - Home">
-        <svg class="logo-svg" viewBox="0 0 52 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <rect class="logo-bg" x="0" y="0" width="52" height="28" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
-          <text x="26" y="19" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="13" fill="currentColor" letter-spacing="-0.04em">AL</text>
-        </svg>
-        <span class="navbar__logo-text">Anthony Leuterio</span>
-      </a>
-      <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        <span class="navbar__toggle-bar"></span>
-        <span class="navbar__toggle-bar"></span>
-        <span class="navbar__toggle-bar"></span>
-      </button>
-      <nav class="navbar__menu" id="navMenu" role="navigation">
-        <ul class="navbar__list">
-          <li><a href="#home" class="navbar__link">Home</a></li>
-          <li><a href="#about" class="navbar__link">About</a></li>
-          <li><a href="#services" class="navbar__link">Services</a></li>
-          <li><a href="#portfolio" class="navbar__link">Portfolio</a></li>
-          <li><a href="#testimonials" class="navbar__link">Testimonials</a></li>
-          <li><a href="#contact" class="navbar__link">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
+    <div class="navbar__container navbar__container--full">
+      <div class="navbar__left">
+        <a href="#home" class="navbar__logo" aria-label="Anthony Leuterio - Home">
+          <svg class="logo-svg" viewBox="0 0 52 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect class="logo-bg" x="0" y="0" width="52" height="28" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
+            <text x="26" y="19" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="13" fill="currentColor" letter-spacing="-0.04em">AL</text>
+          </svg>
+          <span class="navbar__logo-text">Anthony Leuterio</span>
+        </a>
+      </div>
+      
+      <div class="navbar__right">
+        <nav class="navbar__menu" id="navMenu" role="navigation">
+          <ul class="navbar__list">
+            <li><a href="#home" class="navbar__link">Home</a></li>
+            <li><a href="#about" class="navbar__link">About</a></li>
+            <li><a href="#services" class="navbar__link">Services</a></li>
+            <li><a href="#portfolio" class="navbar__link">Portfolio</a></li>
+            <li><a href="#testimonials" class="navbar__link">Testimonials</a></li>
+            <li><a href="#news" class="navbar__link">News</a></li>
+            <li><a href="#contact" class="navbar__link">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="navbar__actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme">
+            <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+            <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="18.36" x2="5.64" y2="16.94"></line><line x1="18.36" y1="4.22" x2="19.78" y2="5.64"></line></svg>
+          </button>
+          <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span class="navbar__toggle-bar"></span>
+            <span class="navbar__toggle-bar"></span>
+            <span class="navbar__toggle-bar"></span>
+          </button>
+        </div>
+      </div>
   </header>
 
   <main>
     <!-- ========== HERO SECTION ========== -->
     <section class="hero" id="home" aria-label="Introduction">
       <div class="hero__bg"></div>
-      <div class="hero__content">
-        <p class="hero__greeting reveal reveal-delay-1">Welcome — I'm</p>
-        <h1 class="hero__title reveal reveal-delay-2">Anthony Leuterio</h1>
-        <p class="hero__tagline reveal reveal-delay-3">Business Strategist · Consultant · Investor</p>
-        <p class="hero__desc reveal reveal-delay-4">I help companies scale, enter new markets, and build lasting value through strategy, mentoring, and smart capital.</p>
-        <div class="hero__cta reveal reveal-delay-5">
-          <a href="#contact" class="btn btn--primary">Hire Me</a>
-          <a href="#portfolio" class="btn btn--outline">View Portfolio</a>
+      <div class="container hero__container-inner">
+        <div class="hero__content">
+          <p class="hero__greeting reveal reveal-delay-1">Welcome — I'm</p>
+          <h1 class="hero__title reveal reveal-delay-2">Anthony Leuterio</h1>
+          <p class="hero__tagline reveal reveal-delay-3">Founder @ Filipinohomes | Motivational Speaker | Real Estate Influencer | Marketing Consultant | Realtor | Investor |</p>
+          <p class="hero__desc reveal reveal-delay-4">I help companies scale, enter new markets, and build lasting value through strategy, mentoring, and smart capital.</p>
+        </div>
+        <div class="hero__image-wrap reveal reveal-delay-5">
+          <img src="images/sirton2.9a788e1d (1).png" alt="Anthony Leuterio" class="hero__image">
         </div>
       </div>
     </section>
@@ -211,6 +223,49 @@
               </div>
             </footer>
           </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== NEWS SECTION ========== -->
+    <section class="news section section--dark" id="news" aria-labelledby="news-heading">
+      <div class="container">
+        <h2 class="section__title reveal" id="news-heading">Latest News</h2>
+        <p class="section__subtitle reveal">Insights, articles, and industry updates</p>
+        <div class="news__grid">
+          <article class="card card--glass reveal">
+            <div class="card__image-wrap">
+              <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=600&h=400&fit=crop" alt="Market Analysis" class="card__image" loading="lazy">
+            </div>
+            <div class="card__content">
+              <span class="card__date">March 10, 2026</span>
+              <h3 class="card__title">The Future of Global Trade in 2026</h3>
+              <p class="card__text">Exploring the emerging trends and shifting dynamics in international commerce and how businesses can adapt.</p>
+              <a href="#" class="btn-text">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="card card--glass reveal">
+            <div class="card__image-wrap">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Investment Strategy" class="card__image" loading="lazy">
+            </div>
+            <div class="card__content">
+              <span class="card__date">February 25, 2026</span>
+              <h3 class="card__title">Strategic Capital Allocation for Startups</h3>
+              <p class="card__text">A deep dive into how early-stage companies can optimize their capital to drive sustainable long-term growth.</p>
+              <a href="#" class="btn-text">Read More &rarr;</a>
+            </div>
+          </article>
+          <article class="card card--glass reveal">
+            <div class="card__image-wrap">
+              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop" alt="Leadership" class="card__image" loading="lazy">
+            </div>
+            <div class="card__content">
+              <span class="card__date">February 12, 2026</span>
+              <h3 class="card__title">Leadership in the Age of Digital Transformation</h3>
+              <p class="card__text">How executives can lead with agility and vision during rapid technological shifts and organizational change.</p>
+              <a href="#" class="btn-text">Read More &rarr;</a>
+            </div>
+          </article>
         </div>
       </div>
     </section>

@@ -13,6 +13,31 @@
   const navLinks = document.querySelectorAll('.navbar__link');
   const contactForm = document.getElementById('contactForm');
   const yearEl = document.getElementById('year');
+  const themeToggle = document.getElementById('themeToggle');
+
+  // ---------- Theme Toggle (Light/Dark Mode) ----------
+  function initTheme() {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+      document.body.classList.add('light-mode');
+    } else if (savedTheme === 'dark') {
+      document.body.classList.remove('light-mode');
+    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+      // Default to system preference if no saved preference
+      document.body.classList.add('light-mode');
+    }
+  }
+
+  function toggleTheme() {
+    document.body.classList.toggle('light-mode');
+    const isLight = document.body.classList.contains('light-mode');
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
+  }
+
+  if (themeToggle) {
+    themeToggle.addEventListener('click', toggleTheme);
+  }
+  initTheme();
 
   // ---------- Sticky navbar (add shadow/opacity on scroll) ----------
   function updateNavbar() {
@@ -80,7 +105,7 @@
   const revealEls = document.querySelectorAll('.reveal');
   const revealOffset = 80;
   const revealThreshold = 0.1;
-  const staggerParents = document.querySelectorAll('.services__grid, .portfolio__grid, .testimonials__grid, .about__content');
+  const staggerParents = document.querySelectorAll('.services__grid, .portfolio__grid, .testimonials__grid, .news__grid, .about__content');
 
   function applyStaggerDelays() {
     staggerParents.forEach(function (parent) {
