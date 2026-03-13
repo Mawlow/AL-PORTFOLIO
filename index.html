@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <meta name="description" content="Professional portfolio of a successful businessman - Business Consulting, Strategy, Mentoring & Investment Advisory">
   <meta name="keywords" content="business consultant, strategy, mentoring, investment, entrepreneur">
   <title>Anthony Leuterio | Business Consultant & Strategist</title>
   <!-- Google Fonts: Poppins for headings, Inter for body -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,10 +18,8 @@
     <div class="navbar__container navbar__container--full">
       <div class="navbar__left">
         <a href="#home" class="navbar__logo" aria-label="Anthony Leuterio - Home">
-          <svg class="logo-svg" viewBox="0 0 52 28" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-            <rect class="logo-bg" x="0" y="0" width="52" height="28" rx="8" fill="none" stroke="currentColor" stroke-width="2"/>
-            <text x="26" y="19" text-anchor="middle" font-family="Poppins, sans-serif" font-weight="800" font-size="13" fill="currentColor" letter-spacing="-0.04em">AL</text>
-          </svg>
+          <img src="images/logo1.png" alt="AL - Anthony Leuterio" class="logo-img logo-img--dark" width="72" height="40" loading="eager">
+          <img src="images/Logo.png" alt="AL - Anthony Leuterio" class="logo-img logo-img--light" width="72" height="40" loading="lazy">
           <span class="navbar__logo-text">Anthony Leuterio</span>
         </a>
       </div>
@@ -30,18 +28,17 @@
         <nav class="navbar__menu" id="navMenu" role="navigation">
           <ul class="navbar__list">
             <li><a href="#home" class="navbar__link">Home</a></li>
-            <li><a href="#about" class="navbar__link">About</a></li>
-            <li><a href="#services" class="navbar__link">Services</a></li>
-            <li><a href="#portfolio" class="navbar__link">Portfolio</a></li>
-            <li><a href="#testimonials" class="navbar__link">Testimonials</a></li>
+            <li><a href="#portfolio" class="navbar__link">Companies & Ventures</a></li>
+            <li><a href="#awards" class="navbar__link">Awards</a></li>
+            <li><a href="#licenses" class="navbar__link">Licenses & Certificates</a></li>
             <li><a href="#news" class="navbar__link">News</a></li>
             <li><a href="#contact" class="navbar__link">Contact</a></li>
           </ul>
         </nav>
         <div class="navbar__actions">
           <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme">
-            <svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-            <svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="18.36" x2="5.64" y2="16.94"></line><line x1="18.36" y1="4.22" x2="19.78" y2="5.64"></line></svg>
+            <svg class="moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+            <svg class="sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
           </button>
           <button class="navbar__toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">
             <span class="navbar__toggle-bar"></span>
@@ -56,12 +53,107 @@
     <!-- ========== HERO SECTION ========== -->
     <section class="hero" id="home" aria-label="Introduction">
       <div class="hero__bg"></div>
+      <div class="hero__beams" aria-hidden="true">
+        <svg class="hero__beams-svg" viewBox="0 0 696 316" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="beam-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#e50914" stop-opacity="0" />
+              <stop offset="20%" stop-color="#e50914" stop-opacity="0.6" />
+              <stop offset="50%" stop-color="#e50914" stop-opacity="0.4" />
+              <stop offset="80%" stop-color="#e50914" stop-opacity="0.6" />
+              <stop offset="100%" stop-color="#e50914" stop-opacity="0" />
+            </linearGradient>
+            <linearGradient id="beam-gradient-light" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#e50914" stop-opacity="0" />
+              <stop offset="20%" stop-color="#e50914" stop-opacity="0.65" />
+              <stop offset="50%" stop-color="#b80710" stop-opacity="0.55" />
+              <stop offset="80%" stop-color="#e50914" stop-opacity="0.65" />
+              <stop offset="100%" stop-color="#e50914" stop-opacity="0" />
+            </linearGradient>
+          </defs>
+          <g class="hero__beams-static" opacity="0.04">
+            <path d="M-380 -189C-380 -189 -312 216 152 343C616 470 684 875 684 875" stroke="currentColor" stroke-width="0.5" />
+            <path d="M-358 -213C-358 -213 -290 192 174 319C638 446 706 851 706 851" stroke="currentColor" stroke-width="0.5" />
+            <path d="M-336 -237C-336 -237 -268 168 196 295C660 422 728 827 728 827" stroke="currentColor" stroke-width="0.5" />
+            <path d="M-314 -261C-314 -261 -246 144 218 271C682 398 750 803 750 803" stroke="currentColor" stroke-width="0.5" />
+            <path d="M-292 -285C-292 -285 -224 120 240 247C704 374 772 779 772 779" stroke="currentColor" stroke-width="0.5" />
+            <path d="M-270 -309C-270 -309 -202 96 262 223C726 350 794 755 794 755" stroke="currentColor" stroke-width="0.5" />
+            <path d="M-248 -333C-248 -333 -180 72 284 199C748 326 816 731 816 731" stroke="currentColor" stroke-width="0.5" />
+            <path d="M-226 -357C-226 -357 -158 48 306 175C770 302 838 707 838 707" stroke="currentColor" stroke-width="0.5" />
+            <path d="M-204 -381C-204 -381 -136 24 328 151C792 278 860 683 860 683" stroke="currentColor" stroke-width="0.5" />
+            <path d="M-182 -405C-182 -405 -114 0 350 127C814 254 882 659 882 659" stroke="currentColor" stroke-width="0.5" />
+            <path d="M-160 -429C-160 -429 -92 -24 372 103C836 230 904 635 904 635" stroke="currentColor" stroke-width="0.5" />
+            <path d="M-138 -453C-138 -453 -70 -48 394 79C858 206 926 611 926 611" stroke="currentColor" stroke-width="0.5" />
+            <path d="M-116 -477C-116 -477 -48 -72 416 55C880 182 948 587 948 587" stroke="currentColor" stroke-width="0.5" />
+            <path d="M-94 -501C-94 -501 -26 -96 438 31C902 158 970 563 970 563" stroke="currentColor" stroke-width="0.5" />
+            <path d="M-72 -525C-72 -525 -4 -120 460 7C924 134 992 539 992 539" stroke="currentColor" stroke-width="0.5" />
+            <path d="M-50 -549C-50 -549 18 -144 482 -17C946 110 1014 515 1014 515" stroke="currentColor" stroke-width="0.5" />
+            <path d="M-28 -573C-28 -573 40 -168 504 -41C968 86 1036 491 1036 491" stroke="currentColor" stroke-width="0.5" />
+            <path d="M-6 -597C-6 -597 62 -192 526 -65C990 62 1058 467 1058 467" stroke="currentColor" stroke-width="0.5" />
+            <path d="M16 -621C16 -621 84 -216 548 -89C1012 38 1080 443 1080 443" stroke="currentColor" stroke-width="0.5" />
+            <path d="M38 -645C38 -645 106 -240 570 -113C1034 14 1102 419 1102 419" stroke="currentColor" stroke-width="0.5" />
+          </g>
+          <g class="hero__beams-animated">
+            <path class="hero__beam" data-delay="0" data-duration="4" d="M-380 -189C-380 -189 -312 216 152 343C616 470 684 875 684 875" stroke="url(#beam-gradient)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam" data-delay="0.15" data-duration="4.8" d="M-358 -213C-358 -213 -290 192 174 319C638 446 706 851 706 851" stroke="url(#beam-gradient)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam" data-delay="0.3" data-duration="5.6" d="M-336 -237C-336 -237 -268 168 196 295C660 422 728 827 728 827" stroke="url(#beam-gradient)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam" data-delay="0.45" data-duration="6.4" d="M-314 -261C-314 -261 -246 144 218 271C682 398 750 803 750 803" stroke="url(#beam-gradient)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam" data-delay="0.6" data-duration="4" d="M-292 -285C-292 -285 -224 120 240 247C704 374 772 779 772 779" stroke="url(#beam-gradient)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam" data-delay="0.75" data-duration="4.8" d="M-270 -309C-270 -309 -202 96 262 223C726 350 794 755 794 755" stroke="url(#beam-gradient)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam" data-delay="0.9" data-duration="5.6" d="M-248 -333C-248 -333 -180 72 284 199C748 326 816 731 816 731" stroke="url(#beam-gradient)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam" data-delay="1.05" data-duration="6.4" d="M-226 -357C-226 -357 -158 48 306 175C770 302 838 707 838 707" stroke="url(#beam-gradient)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam" data-delay="1.2" data-duration="4" d="M-204 -381C-204 -381 -136 24 328 151C792 278 860 683 860 683" stroke="url(#beam-gradient)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam" data-delay="1.35" data-duration="4.8" d="M-182 -405C-182 -405 -114 0 350 127C814 254 882 659 882 659" stroke="url(#beam-gradient)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam" data-delay="1.5" data-duration="5.6" d="M-160 -429C-160 -429 -92 -24 372 103C836 230 904 635 904 635" stroke="url(#beam-gradient)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam" data-delay="1.65" data-duration="6.4" d="M-138 -453C-138 -453 -70 -48 394 79C858 206 926 611 926 611" stroke="url(#beam-gradient)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam" data-delay="1.8" data-duration="4" d="M-116 -477C-116 -477 -48 -72 416 55C880 182 948 587 948 587" stroke="url(#beam-gradient)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam" data-delay="1.95" data-duration="4.8" d="M-94 -501C-94 -501 -26 -96 438 31C902 158 970 563 970 563" stroke="url(#beam-gradient)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam" data-delay="2.1" data-duration="5.6" d="M-72 -525C-72 -525 -4 -120 460 7C924 134 992 539 992 539" stroke="url(#beam-gradient)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam" data-delay="2.25" data-duration="6.4" d="M-50 -549C-50 -549 18 -144 482 -17C946 110 1014 515 1014 515" stroke="url(#beam-gradient)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam" data-delay="2.4" data-duration="4" d="M-28 -573C-28 -573 40 -168 504 -41C968 86 1036 491 1036 491" stroke="url(#beam-gradient)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam" data-delay="2.55" data-duration="4.8" d="M-6 -597C-6 -597 62 -192 526 -65C990 62 1058 467 1058 467" stroke="url(#beam-gradient)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam" data-delay="2.7" data-duration="5.6" d="M16 -621C16 -621 84 -216 548 -89C1012 38 1080 443 1080 443" stroke="url(#beam-gradient)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam" data-delay="2.85" data-duration="6.4" d="M38 -645C38 -645 106 -240 570 -113C1034 14 1102 419 1102 419" stroke="url(#beam-gradient)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+          </g>
+          <g class="hero__beams-animated hero__beams-animated--light">
+            <path class="hero__beam hero__beam--light" d="M-380 -189C-380 -189 -312 216 152 343C616 470 684 875 684 875" stroke="url(#beam-gradient-light)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam hero__beam--light" d="M-358 -213C-358 -213 -290 192 174 319C638 446 706 851 706 851" stroke="url(#beam-gradient-light)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam hero__beam--light" d="M-336 -237C-336 -237 -268 168 196 295C660 422 728 827 728 827" stroke="url(#beam-gradient-light)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam hero__beam--light" d="M-314 -261C-314 -261 -246 144 218 271C682 398 750 803 750 803" stroke="url(#beam-gradient-light)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam hero__beam--light" d="M-292 -285C-292 -285 -224 120 240 247C704 374 772 779 772 779" stroke="url(#beam-gradient-light)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam hero__beam--light" d="M-270 -309C-270 -309 -202 96 262 223C726 350 794 755 794 755" stroke="url(#beam-gradient-light)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam hero__beam--light" d="M-248 -333C-248 -333 -180 72 284 199C748 326 816 731 816 731" stroke="url(#beam-gradient-light)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam hero__beam--light" d="M-226 -357C-226 -357 -158 48 306 175C770 302 838 707 838 707" stroke="url(#beam-gradient-light)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam hero__beam--light" d="M-204 -381C-204 -381 -136 24 328 151C792 278 860 683 860 683" stroke="url(#beam-gradient-light)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam hero__beam--light" d="M-182 -405C-182 -405 -114 0 350 127C814 254 882 659 882 659" stroke="url(#beam-gradient-light)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam hero__beam--light" d="M-160 -429C-160 -429 -92 -24 372 103C836 230 904 635 904 635" stroke="url(#beam-gradient-light)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam hero__beam--light" d="M-138 -453C-138 -453 -70 -48 394 79C858 206 926 611 926 611" stroke="url(#beam-gradient-light)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam hero__beam--light" d="M-116 -477C-116 -477 -48 -72 416 55C880 182 948 587 948 587" stroke="url(#beam-gradient-light)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam hero__beam--light" d="M-94 -501C-94 -501 -26 -96 438 31C902 158 970 563 970 563" stroke="url(#beam-gradient-light)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam hero__beam--light" d="M-72 -525C-72 -525 -4 -120 460 7C924 134 992 539 992 539" stroke="url(#beam-gradient-light)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam hero__beam--light" d="M-50 -549C-50 -549 18 -144 482 -17C946 110 1014 515 1014 515" stroke="url(#beam-gradient-light)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam hero__beam--light" d="M-28 -573C-28 -573 40 -168 504 -41C968 86 1036 491 1036 491" stroke="url(#beam-gradient-light)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam hero__beam--light" d="M-6 -597C-6 -597 62 -192 526 -65C990 62 1058 467 1058 467" stroke="url(#beam-gradient-light)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam hero__beam--light" d="M16 -621C16 -621 84 -216 548 -89C1012 38 1080 443 1080 443" stroke="url(#beam-gradient-light)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+            <path class="hero__beam hero__beam--light" d="M38 -645C38 -645 106 -240 570 -113C1034 14 1102 419 1102 419" stroke="url(#beam-gradient-light)" stroke-width="0.35" stroke-linecap="round" fill="none" />
+          </g>
+        </svg>
+      </div>
       <div class="container hero__container-inner">
         <div class="hero__content">
           <p class="hero__greeting reveal reveal-delay-1">Welcome — I'm</p>
           <h1 class="hero__title reveal reveal-delay-2">Anthony Leuterio</h1>
-          <p class="hero__tagline reveal reveal-delay-3">Founder @ Filipinohomes | Motivational Speaker | Real Estate Influencer | Marketing Consultant | Realtor | Investor |</p>
-          <p class="hero__desc reveal reveal-delay-4">I help companies scale, enter new markets, and build lasting value through strategy, mentoring, and smart capital.</p>
+          <p class="hero__tagline hero__tagline--cycle reveal reveal-delay-3">
+            <span class="hero__tagline-inner">
+              <span class="hero__tagline-item is-active">Founder @ Filipinohomes</span>
+              <span class="hero__tagline-item">Motivational Speaker</span>
+              <span class="hero__tagline-item">Real Estate Influencer</span>
+              <span class="hero__tagline-item">Marketing Consultant</span>
+              <span class="hero__tagline-item">Realtor</span>
+              <span class="hero__tagline-item">Investor</span>
+            </span>
+          </p>
+          <p class="hero__desc reveal reveal-delay-4">The president and founder of several companies under the Leuterio Realty & Brokerage Group has made real estate in the Philippines more prominent and much attractive to buyers.</p>
         </div>
         <div class="hero__image-wrap reveal reveal-delay-5">
           <img src="images/sirton2.9a788e1d (1).png" alt="Anthony Leuterio" class="hero__image">
@@ -69,221 +161,260 @@
       </div>
     </section>
 
-    <!-- ========== ABOUT SECTION ========== -->
-    <section class="about section" id="about" aria-labelledby="about-heading">
-      <div class="container">
-        <h2 class="section__title reveal" id="about-heading">About Me</h2>
-        <div class="about__grid">
-          <div class="about__image-wrap reveal">
-            <img
-              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&h=700&fit=crop"
-              alt="Anthony Leuterio - Business Consultant"
-              class="about__image"
-              width="600"
-              height="700"
-              loading="lazy"
-            >
-          </div>
-          <div class="about__content">
-            <p class="about__bio reveal">
-              With over 15 years in executive roles and advisory, I partner with founders and boards to drive growth, streamline operations, and unlock new opportunities. My approach blends data-driven strategy with hands-on leadership.
-            </p>
-            <p class="about__bio reveal">
-              I've led teams across three continents and advised startups to Fortune 500 companies. Today I focus on consulting, mentoring, and selective investments in high-potential ventures.
-            </p>
-            <div class="about__skills reveal">
-              <h3 class="about__skills-title">Core Competencies</h3>
-              <ul class="about__skills-list">
-                <li>Leadership & Team Building</li>
-                <li>Business Strategy</li>
-                <li>Marketing & Brand Strategy</li>
-                <li>Investment & Capital Allocation</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ========== SERVICES SECTION ========== -->
-    <section class="services section section--dark" id="services" aria-labelledby="services-heading">
-      <div class="container">
-        <h2 class="section__title reveal" id="services-heading">Services</h2>
-        <p class="section__subtitle reveal">What I offer to businesses and leaders</p>
-        <div class="services__grid">
-          <article class="card card--glass reveal">
-            <div class="card__icon">📊</div>
-            <h3 class="card__title">Business Consulting</h3>
-            <p class="card__text">End-to-end advisory on operations, structure, and scaling. From due diligence to implementation roadmaps.</p>
-          </article>
-          <article class="card card--glass reveal">
-            <div class="card__icon">🎯</div>
-            <h3 class="card__title">Market Strategy</h3>
-            <p class="card__text">Market entry, positioning, and go-to-market plans backed by research and competitive analysis.</p>
-          </article>
-          <article class="card card--glass reveal">
-            <div class="card__icon">🚀</div>
-            <h3 class="card__title">Startup Mentoring</h3>
-            <p class="card__text">One-on-one mentoring for founders: fundraising, product-market fit, and building high-performing teams.</p>
-          </article>
-          <article class="card card--glass reveal">
-            <div class="card__icon">💰</div>
-            <h3 class="card__title">Investment Advisory</h3>
-            <p class="card__text">Strategic guidance on capital allocation, M&A, and portfolio optimization for investors and family offices.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
     <!-- ========== PORTFOLIO SECTION ========== -->
-    <section class="portfolio section" id="portfolio" aria-labelledby="portfolio-heading">
+    <section class="portfolio section section--same-bg" id="portfolio" aria-labelledby="portfolio-heading">
       <div class="container">
-        <h2 class="section__title reveal" id="portfolio-heading">Portfolio</h2>
+        <h2 class="section__title reveal" id="portfolio-heading"><span class="anim-red">Companies</span> & Ventures</h2>
         <p class="section__subtitle reveal">Selected projects and engagements</p>
         <div class="portfolio__grid">
-          <a href="#" class="portfolio__item reveal" aria-label="View TechScale case study">
-            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?w=600&h=400&fit=crop" alt="TechScale - Office collaboration" width="600" height="400" loading="lazy">
+          <a href="https://filipinohomes.com" target="_blank" rel="noopener noreferrer" class="portfolio__item reveal" aria-label="Visit Filipino Homes">
+            <img src="images/FH1.jpeg" alt="Filipino Homes - Buy Sell Rent Foreclosure" width="600" height="400" loading="lazy">
             <div class="portfolio__overlay">
-              <span class="portfolio__label">TechScale Inc.</span>
-              <span class="portfolio__role">Strategy & Scaling</span>
+              <span class="portfolio__label">Filipino Homes</span>
+              <span class="portfolio__role">Buy · Sell · Rent · Foreclosure</span>
             </div>
           </a>
-          <a href="#" class="portfolio__item reveal" aria-label="View GlobalTrade case study">
-            <img src="https://images.unsplash.com/photo-1556761175-b413da4baf72?w=600&h=400&fit=crop" alt="GlobalTrade - Business meeting" width="600" height="400" loading="lazy">
+          <a href="https://leuteriorealty.com/" target="_blank" rel="noopener noreferrer" class="portfolio__item reveal" aria-label="Visit Leuterio Realty & Brokerage">
+            <img src="images/lr1.png" alt="Leuterio Realty & Brokerage" width="600" height="400" loading="lazy">
             <div class="portfolio__overlay">
-              <span class="portfolio__label">GlobalTrade</span>
-              <span class="portfolio__role">Market Entry</span>
+              <span class="portfolio__label">Leuterio Realty & Brokerage</span>
+              <span class="portfolio__role">Real Estate</span>
             </div>
           </a>
-          <a href="#" class="portfolio__item reveal" aria-label="View FinServe case study">
-            <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=400&fit=crop" alt="FinServe - Finance and strategy" width="600" height="400" loading="lazy">
+          <a href="https://rent.ph" target="_blank" rel="noopener noreferrer" class="portfolio__item reveal" aria-label="Visit Rent.ph">
+            <img src="images/RP.png" alt="Rent.ph - Property rental" width="600" height="400" loading="lazy">
             <div class="portfolio__overlay">
-              <span class="portfolio__label">FinServe</span>
-              <span class="portfolio__role">Investment Advisory</span>
-            </div>
-          </a>
-          <a href="#" class="portfolio__item reveal" aria-label="View HealthPlus case study">
-            <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=400&fit=crop" alt="HealthPlus - Healthcare innovation" width="600" height="400" loading="lazy">
-            <div class="portfolio__overlay">
-              <span class="portfolio__label">HealthPlus</span>
-              <span class="portfolio__role">Growth Strategy</span>
-            </div>
-          </a>
-          <a href="#" class="portfolio__item reveal" aria-label="View EcoEnergy case study">
-            <img src="https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?w=600&h=400&fit=crop" alt="EcoEnergy - Sustainable business" width="600" height="400" loading="lazy">
-            <div class="portfolio__overlay">
-              <span class="portfolio__label">EcoEnergy</span>
-              <span class="portfolio__role">Consulting</span>
-            </div>
-          </a>
-          <a href="#" class="portfolio__item reveal" aria-label="View RetailNext case study">
-            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=600&h=400&fit=crop" alt="RetailNext - Retail transformation" width="600" height="400" loading="lazy">
-            <div class="portfolio__overlay">
-              <span class="portfolio__label">RetailNext</span>
-              <span class="portfolio__role">Turnaround</span>
+              <span class="portfolio__label">Rent.ph</span>
+              <span class="portfolio__role">Property Rental</span>
             </div>
           </a>
         </div>
       </div>
     </section>
 
-    <!-- ========== TESTIMONIALS SECTION ========== -->
-    <section class="testimonials section section--dark" id="testimonials" aria-labelledby="testimonials-heading">
+    <!-- ========== AWARDS SECTION ========== -->
+    <section class="awards section section--same-bg" id="awards" aria-labelledby="awards-heading">
+      <div class="container container--awards">
+        <h2 class="section__title reveal" id="awards-heading"><span class="anim-red">Awards</span></h2>
+        <p class="section__subtitle reveal">Recognition and achievements</p>
+        <div class="awards__timeline">
+          <article class="award-item award-item--right reveal">
+            <div class="award-item__node"><span>2023</span></div>
+            <div class="award-item__content">
+              <span class="award-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+              </span>
+              <h3 class="award-item__title">Most Outstanding Real Estate Broker of the Year</h3>
+              <p class="award-item__org">Philippine Real Estate Awards</p>
+            </div>
+          </article>
+          <article class="award-item award-item--left reveal">
+            <div class="award-item__node"><span>2022</span></div>
+            <div class="award-item__content">
+              <span class="award-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+              </span>
+              <h3 class="award-item__title">Top Digital Innovator in Real Estate</h3>
+              <p class="award-item__org">Asia PropTech Summit</p>
+            </div>
+          </article>
+          <article class="award-item award-item--right reveal">
+            <div class="award-item__node"><span>2021</span></div>
+            <div class="award-item__content">
+              <span class="award-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+              </span>
+              <h3 class="award-item__title">Best Real Estate Brand of the Philippines</h3>
+              <p class="award-item__org">National Real Estate Honors</p>
+            </div>
+          </article>
+          <article class="award-item award-item--left reveal">
+            <div class="award-item__node"><span>2020</span></div>
+            <div class="award-item__content">
+              <span class="award-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+              </span>
+              <h3 class="award-item__title">Entrepreneur of the Year — Real Estate</h3>
+              <p class="award-item__org">Asia CEO Awards</p>
+            </div>
+          </article>
+          <article class="award-item award-item--right reveal">
+            <div class="award-item__node"><span>2019</span></div>
+            <div class="award-item__content">
+              <span class="award-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+              </span>
+              <h3 class="award-item__title">Top Motivational Speaker in Real Estate</h3>
+              <p class="award-item__org">Philippine Motivators Guild</p>
+            </div>
+          </article>
+          <article class="award-item award-item--left reveal">
+            <div class="award-item__node"><span>2018</span></div>
+            <div class="award-item__content">
+              <span class="award-item__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+              </span>
+              <h3 class="award-item__title">Most Influential Real Estate Personality</h3>
+              <p class="award-item__org">Property Report PH</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== LICENSES & CERTIFICATES SECTION ========== -->
+    <section class="licenses section section--same-bg" id="licenses" aria-labelledby="licenses-heading">
       <div class="container">
-        <h2 class="section__title reveal" id="testimonials-heading">Testimonials</h2>
-        <p class="section__subtitle reveal">What clients say about working with me</p>
-        <div class="testimonials__grid">
-          <blockquote class="card card--glass card--testimonial reveal">
-            <p class="card__quote">"John's strategic insight helped us pivot at the right moment. Revenue grew 40% in the first year after his engagement."</p>
-            <footer class="card__author">
-              <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&crop=face" alt="Sarah Chen" width="80" height="80" loading="lazy">
-              <div>
-                <strong>Sarah Chen</strong>
-                <span>CEO, TechScale Inc.</span>
-              </div>
-            </footer>
-          </blockquote>
-          <blockquote class="card card--glass card--testimonial reveal">
-            <p class="card__quote">"Best investment advisor we've worked with. Clear, pragmatic, and always available when it matters."</p>
-            <footer class="card__author">
-              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=80&h=80&fit=crop&crop=face" alt="Michael Torres" width="80" height="80" loading="lazy">
-              <div>
-                <strong>Michael Torres</strong>
-                <span>Managing Partner, Horizon Capital</span>
-              </div>
-            </footer>
-          </blockquote>
-          <blockquote class="card card--glass card--testimonial reveal">
-            <p class="card__quote">"His mentoring gave our leadership team clarity and confidence. We closed our Series B within six months."</p>
-            <footer class="card__author">
-              <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=80&h=80&fit=crop&crop=face" alt="Emma Watson" width="80" height="80" loading="lazy">
-              <div>
-                <strong>Emma Watson</strong>
-                <span>Founder, HealthPlus</span>
-              </div>
-            </footer>
-          </blockquote>
+        <h2 class="section__title reveal" id="licenses-heading"><span class="anim-red">Licenses & Certificates</span></h2>
+        <p class="section__subtitle reveal">Professional credentials and accreditations</p>
+        <div class="licenses__grid">
+          <article class="license-card reveal">
+            <div class="license-card__content">
+              <span class="license-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg>
+              </span>
+              <h3 class="license-card__title">Licensed Real Estate Broker</h3>
+              <p class="license-card__org">Professional Regulation Commission</p>
+              <span class="license-card__badge">PRC CERTIFIED</span>
+            </div>
+          </article>
+          <article class="license-card reveal">
+            <div class="license-card__content">
+              <span class="license-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg>
+              </span>
+              <h3 class="license-card__title">Certified Real Estate Salesperson</h3>
+              <p class="license-card__org">PAREB</p>
+              <span class="license-card__badge">PAREB CERTIFIED</span>
+            </div>
+          </article>
+          <article class="license-card reveal">
+            <div class="license-card__content">
+              <span class="license-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg>
+              </span>
+              <h3 class="license-card__title">Digital Marketing Specialist</h3>
+              <p class="license-card__org">Google Digital Garage</p>
+              <span class="license-card__badge">2021</span>
+            </div>
+          </article>
+          <article class="license-card reveal">
+            <div class="license-card__content">
+              <span class="license-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg>
+              </span>
+              <h3 class="license-card__title">Accredited Real Estate Consultant</h3>
+              <p class="license-card__org">REBAP</p>
+              <span class="license-card__badge">REBAP ACCREDITED</span>
+            </div>
+          </article>
+          <article class="license-card reveal">
+            <div class="license-card__content">
+              <span class="license-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg>
+              </span>
+              <h3 class="license-card__title">Social Media Marketing</h3>
+              <p class="license-card__org">HubSpot Academy</p>
+              <span class="license-card__badge">2022</span>
+            </div>
+          </article>
+          <article class="license-card reveal">
+            <div class="license-card__content">
+              <span class="license-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg>
+              </span>
+              <h3 class="license-card__title">PropTech Innovation Certificate</h3>
+              <p class="license-card__org">ASEAN PropTech Forum</p>
+              <span class="license-card__badge">2023</span>
+            </div>
+          </article>
+          <article class="license-card reveal">
+            <div class="license-card__content">
+              <span class="license-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg>
+              </span>
+              <h3 class="license-card__title">Entrepreneurship Leadership Program</h3>
+              <p class="license-card__org">Asian Institute of Management</p>
+              <span class="license-card__badge">2019</span>
+            </div>
+          </article>
+          <article class="license-card reveal">
+            <div class="license-card__content">
+              <span class="license-card__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/><path d="M12 18v-6"/><path d="M9 15h6"/></svg>
+              </span>
+              <h3 class="license-card__title">Real Estate Investment Strategist</h3>
+              <p class="license-card__org">Philippine Real Estate Academy</p>
+              <span class="license-card__badge">2020</span>
+            </div>
+          </article>
         </div>
       </div>
     </section>
 
     <!-- ========== NEWS SECTION ========== -->
-    <section class="news section section--dark" id="news" aria-labelledby="news-heading">
+    <section class="news section section--same-bg" id="news" aria-labelledby="news-heading">
       <div class="container">
-        <h2 class="section__title reveal" id="news-heading">Latest News</h2>
+        <h2 class="section__title reveal" id="news-heading"><span class="anim-red">Latest</span> News</h2>
         <p class="section__subtitle reveal">Insights, articles, and industry updates</p>
-        <div class="news__grid">
-          <article class="card card--glass reveal">
-            <div class="card__image-wrap">
-              <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=600&h=400&fit=crop" alt="Market Analysis" class="card__image" loading="lazy">
+        <div class="news__layout">
+          <a href="#" class="news__featured reveal" aria-label="Read: The Future of Global Trade in 2026">
+            <div class="news__featured-image">
+              <img src="https://images.unsplash.com/photo-1590283603385-17ffb3a7f29f?w=800&h=500&fit=crop" alt="Market Analysis" width="800" height="500" loading="lazy">
+              <span class="news__badge">Featured</span>
             </div>
-            <div class="card__content">
-              <span class="card__date">March 10, 2026</span>
-              <h3 class="card__title">The Future of Global Trade in 2026</h3>
-              <p class="card__text">Exploring the emerging trends and shifting dynamics in international commerce and how businesses can adapt.</p>
-              <a href="#" class="btn-text">Read More &rarr;</a>
+            <div class="news__featured-body">
+              <span class="news__meta">March 10, 2026 · Industry</span>
+              <h3 class="news__featured-title">The Future of Global Trade in 2026</h3>
+              <p class="news__excerpt">Exploring the emerging trends and shifting dynamics in international commerce and how businesses can adapt to new opportunities.</p>
+              <span class="news__link">Read article &rarr;</span>
             </div>
-          </article>
-          <article class="card card--glass reveal">
-            <div class="card__image-wrap">
-              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop" alt="Investment Strategy" class="card__image" loading="lazy">
+          </a>
+          <a href="#" class="news__card reveal" aria-label="Read: Strategic Capital Allocation for Startups">
+            <div class="news__card-image">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=320&fit=crop" alt="Investment Strategy" width="600" height="320" loading="lazy">
             </div>
-            <div class="card__content">
-              <span class="card__date">February 25, 2026</span>
-              <h3 class="card__title">Strategic Capital Allocation for Startups</h3>
-              <p class="card__text">A deep dive into how early-stage companies can optimize their capital to drive sustainable long-term growth.</p>
-              <a href="#" class="btn-text">Read More &rarr;</a>
+            <div class="news__card-body">
+              <span class="news__meta">Feb 25, 2026</span>
+              <h3 class="news__card-title">Strategic Capital Allocation for Startups</h3>
+              <p class="news__card-excerpt">How early-stage companies can optimize capital for sustainable growth.</p>
+              <span class="news__link">Read more</span>
             </div>
-          </article>
-          <article class="card card--glass reveal">
-            <div class="card__image-wrap">
-              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop" alt="Leadership" class="card__image" loading="lazy">
+          </a>
+          <a href="#" class="news__card reveal" aria-label="Read: Leadership in the Age of Digital Transformation">
+            <div class="news__card-image">
+              <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=320&fit=crop" alt="Leadership" width="600" height="320" loading="lazy">
             </div>
-            <div class="card__content">
-              <span class="card__date">February 12, 2026</span>
-              <h3 class="card__title">Leadership in the Age of Digital Transformation</h3>
-              <p class="card__text">How executives can lead with agility and vision during rapid technological shifts and organizational change.</p>
-              <a href="#" class="btn-text">Read More &rarr;</a>
+            <div class="news__card-body">
+              <span class="news__meta">Feb 12, 2026</span>
+              <h3 class="news__card-title">Leadership in the Age of Digital Transformation</h3>
+              <p class="news__card-excerpt">Leading with agility and vision during rapid technological change.</p>
+              <span class="news__link">Read more</span>
             </div>
-          </article>
+          </a>
         </div>
       </div>
     </section>
 
     <!-- ========== CONTACT SECTION ========== -->
-    <section class="contact section" id="contact" aria-labelledby="contact-heading">
+    <section class="contact section section--same-bg" id="contact" aria-labelledby="contact-heading">
       <div class="container">
-        <h2 class="section__title reveal" id="contact-heading">Contact</h2>
-        <p class="section__subtitle reveal">Let's discuss your next project</p>
+        <h2 class="section__title reveal" id="contact-heading"><span class="anim-red">Get In Touch</span></h2>
+        <p class="section__subtitle reveal">Let's Work Together.</p>
+        <p class="contact__intro reveal">Whether you're looking to buy, sell, invest in real estate, or book Anthony as a speaker — reach out and let's make it happen.</p>
         <div class="contact__grid">
           <div class="contact__info reveal">
             <p class="contact__item">
-              <strong>Email</strong>
-              <a href="mailto:john.anderson@example.com">john.anderson@example.com</a>
+              <strong>Office</strong>
+              Cebu City, Philippines
             </p>
             <p class="contact__item">
               <strong>Phone</strong>
-              <a href="tel:+1234567890">+1 (234) 567-890</a>
+              <a href="tel:+63321234567">+63 (32) 123-4567</a>
+            </p>
+            <p class="contact__item">
+              <strong>Email</strong>
+              <a href="mailto:anthony@filipinohomes.com">anthony@filipinohomes.com</a>
             </p>
             <div class="contact__social">
               <a href="#" class="contact__social-link" aria-label="LinkedIn">
@@ -298,12 +429,22 @@
             </div>
           </div>
           <form class="contact__form reveal" id="contactForm" action="#" method="post" aria-label="Contact form">
-            <label for="name" class="visually-hidden">Your Name</label>
-            <input type="text" id="name" name="name" placeholder="Your Name" required>
-            <label for="email" class="visually-hidden">Your Email</label>
-            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <label for="name" class="visually-hidden">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Full Name" required>
+            <label for="email" class="visually-hidden">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Email Address" required>
+            <label for="subject" class="visually-hidden">Subject</label>
+            <select id="subject" name="subject" class="contact__select" required aria-label="Subject">
+              <option value="" disabled selected>Select a topic...</option>
+              <option value="real-estate-property">Real Estate &amp; Property</option>
+              <option value="speaking-events">Speaking &amp; Events</option>
+              <option value="marketing-consulting">Marketing &amp; Consulting</option>
+              <option value="partnership-collaboration">Partnership &amp; Collaboration</option>
+              <option value="media-press">Media &amp; Press</option>
+              <option value="other">Other</option>
+            </select>
             <label for="message" class="visually-hidden">Message</label>
-            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            <textarea id="message" name="message" placeholder="Message" rows="5" required></textarea>
             <button type="submit" class="btn btn--primary btn--full">Send Message</button>
           </form>
         </div>

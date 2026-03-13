@@ -39,6 +39,27 @@
   }
   initTheme();
 
+  // ---------- Hero tagline cycling animation ----------
+  (function initTaglineCycle() {
+    const items = document.querySelectorAll('.hero__tagline-item');
+    if (items.length === 0) return;
+    let index = 0;
+    setInterval(function () {
+      items[index].classList.remove('is-active');
+      index = (index + 1) % items.length;
+      items[index].classList.add('is-active');
+    }, 2800);
+  })();
+
+  // ---------- Hero background beams: set path length for animation ----------
+  (function initBeams() {
+    const beams = document.querySelectorAll('.hero__beam');
+    beams.forEach(function (path) {
+      const len = path.getTotalLength();
+      path.style.setProperty('--beam-length', String(len));
+    });
+  })();
+
   // ---------- Sticky navbar (add shadow/opacity on scroll) ----------
   function updateNavbar() {
     if (window.scrollY > 50) {
@@ -105,7 +126,7 @@
   const revealEls = document.querySelectorAll('.reveal');
   const revealOffset = 80;
   const revealThreshold = 0.1;
-  const staggerParents = document.querySelectorAll('.services__grid, .portfolio__grid, .testimonials__grid, .news__grid, .about__content');
+  const staggerParents = document.querySelectorAll('.services__grid, .portfolio__grid, .testimonials__grid, .awards__timeline, .news__layout, .about__content');
 
   function applyStaggerDelays() {
     staggerParents.forEach(function (parent) {
